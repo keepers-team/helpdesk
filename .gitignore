@@ -1,3 +1,4 @@
 .idea
 *.lock
 resources/_gen
+public
