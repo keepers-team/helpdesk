@@ -1,7 +1,8 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'ru-ru'
+title = "Документация webTLO"
 theme = "hugo-theme-relearn"
+defaultContentLanguage = "ru"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
