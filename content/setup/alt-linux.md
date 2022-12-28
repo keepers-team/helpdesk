@@ -14,7 +14,7 @@ weight: 2
 apt-get install apache2 apache2-mod_php5 php5 php5-mbstring \
 php5-curl php5-pdo_sqlite php5-dom php5-xmlrpc unzip
 ```
-Скачиваем [архив](https://github.com/berkut-174/webtlo/releases/latest/download/webtlo.zip) с web-TLO и распаковываем его в каталог `/var/www/vhosts/`:
+Скачиваем [архив](https://github.com/keepers-team/webtlo/releases/latest/download/webtlo.zip) с web-TLO и распаковываем его в каталог `/var/www/vhosts/`:
 
 `unzip webtlo.zip -d /var/www/vhosts/`
 
