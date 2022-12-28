@@ -43,12 +43,12 @@ service nginx reload
 
 Установим/обновим релизную версию WebTLO:
 ```sh
-wget https://github.com/berkut-174/webtlo/releases/latest/download/webtlo.zip
+wget https://github.com/keepers-team/webtlo/releases/latest/download/webtlo.zip
 unzip -o webtlo.zip -d /var/www
 rm webtlo.zip
 install -m 775 -o www-data -g www-data -d /var/www/webtlo.local/data
 ```
 
-Для использования последней версии из репозитория можно использовать `https://github.com/berkut-174/webtlo/archive/refs/heads/master.zip` (внимание, там отличается имя папки)
+Для использования последней версии из репозитория можно использовать `https://github.com/keepers-team/webtlo/archive/refs/heads/master.zip` (внимание, там отличается имя папки)
 
 Готово, можно заходить на http://localhost:8088 или http://ip:8088

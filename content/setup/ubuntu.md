@@ -20,7 +20,7 @@ php-mbstring php-sqlite3 php-xml php-xmlrpc unzip wget
 > **ПРИМЕЧАНИЕ.** Используйте эти команды, чтобы обновить web-TLO до актуальной версии
 
 ```bash
-wget https://github.com/berkut-174/webtlo/releases/latest/download/webtlo.zip
+wget https://github.com/keepers-team/webtlo/releases/latest/download/webtlo.zip
 unzip -o webtlo.zip -d /var/www/
 rm -f webtlo.zip
 ```

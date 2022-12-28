@@ -10,7 +10,7 @@ weight: 5
 apt-get install apache2 libapache2-mod-php5 php5 php5-curl \
 php5-sqlite unzip
 ```
-Скачиваем [архив](https://github.com/berkut-174/webtlo/releases/latest/download/webtlo.zip) с web-TLO и распаковываем его в каталог `/var/www/`:
+Скачиваем [архив](https://github.com/keepers-team/webtlo/releases/latest/download/webtlo.zip) с web-TLO и распаковываем его в каталог `/var/www/`:
 
 `unzip webtlo.zip -d /var/www/`
 

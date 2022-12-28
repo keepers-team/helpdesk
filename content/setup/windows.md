@@ -57,7 +57,7 @@ weight: 1
 
 Предварительно удаляем каталог `C:\OpenServer\domains\localhost\`.
 
-Скачиваем [архив](https://github.com/berkut-174/webtlo/releases/latest/download/webtlo.zip) с web-TLO и распаковываем его в каталог
+Скачиваем [архив](https://github.com/keepers-team/webtlo/releases/latest/download/webtlo.zip) с web-TLO и распаковываем его в каталог
 `C:\OpenServer\domains\`
 
 > Для обновления web-TLO потребуется распаковать новую версию с заменой существующих файлов в этот же каталог.
