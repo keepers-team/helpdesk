@@ -106,7 +106,7 @@ service apache24 restart
 
 ![1000020100000431000001D256E7354F4AA3CF81](https://user-images.githubusercontent.com/32463123/78280884-79bd2c00-7522-11ea-95ea-f1c4ffde5f8e.png)
 
-> ### Переадресация по DNS
+### Переадресация по DNS
 Опционально также настроить переадресацию по DNS (если он работает в вашей сети).
 Например, по-умолчанию, web-интерфейс сетевого хранилища доступен на [http://xigmanas.local](http://xigmanas.local) 
 Можно сделать, чтобы webTLO был доступен по адресу [http://webtlo.local](http://webtlo.local) (или любой ваш вариант).
