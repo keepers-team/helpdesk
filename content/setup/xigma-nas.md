@@ -142,7 +142,7 @@ server.modules = (
 }
 ```
 Добавляем:
-```bash
+```lua
 \$HTTP["host"] == "webtlo.local" {
     url.redirect = ("" => "http://192.168.1.2:803")
 }
