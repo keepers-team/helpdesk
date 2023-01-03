@@ -130,7 +130,7 @@ server.modules = (
  ```
 
 Добавим туда, не забыв поставить запятую после "mod_setenv":
-```bash
+```lua
   "mod_rewrite",
   "mod_redirect",
   "mod_rrdtool"
