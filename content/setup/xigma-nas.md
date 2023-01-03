@@ -111,3 +111,53 @@ service apache24 restart
 Для доступа к стандартному веб-интерфейсу XigmaNAS используйте адрес http://192.168.1.2.
 
 ![1000020100000431000001D256E7354F4AA3CF81](https://user-images.githubusercontent.com/32463123/78280884-79bd2c00-7522-11ea-95ea-f1c4ffde5f8e.png)
+
+### Переадресация по DNS
+Опционально также настроить переадресацию по DNS (если он работает в вашей сети).
+Например, по-умолчанию, web-интерфейс сетевого хранилища доступен на [http://xigmanas.local](http://xigmanas.local) 
+Можно сделать, чтобы webTLO был доступен по адресу [http://webtlo.local](http://webtlo.local) (или любой ваш вариант).
+Для этого нужно отредактировать конфигурацию демона lighttpd, который отвечает за web-интерфейс NAS. Однако, следует заметить, что файл конфигурации /var/etc/lighttpd.conf автоматически перезаписывается при перезапуске демона. Редактировать его нет смысла. Поэтому внесем изменения в /etc/rc.d/lighttpd
+
+```bash
+nano /etc/rc.d/lighttpd
+```
+
+Листаем вниз до секции 
+```lua
+server.modules = (
+  "mod_access",
+  "mod_auth",
+  "mod_expire",
+  "mod_cgi",
+  "mod_fastcgi",
+  "mod_openssl",
+  "mod_setenv"
+ )
+ ```
+
+Добавим туда, не забыв поставить запятую после "mod_setenv":
+```lua
+  "mod_rewrite",
+  "mod_redirect",
+  "mod_rrdtool"
+ ```
+Далее после строк:
+```lua
+\$HTTP["url"] =~ "\.(js|css|css.php|png|gif|jpg)$" {
+    expire.url = ( "" => "access plus 1 hours" )
+}
+```
+Добавляем:
+```lua
+\$HTTP["host"] == "webtlo.local" {
+    url.redirect = ("" => "http://192.168.1.2:803")
+}
+```
+
+Исправляем webtlo.local на нужный вам адрес, а также 192.168.1.2 на IP-адрес вашего сетевого хранилища.
+
+Сохраняем изменения и перезапускаем демон:
+```bash
+service lighttpd restart
+```
+Привязываем домен webtlo.local к IP на вашем роутере или локальном DNS. Проверяем, радуемся.
