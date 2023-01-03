@@ -54,6 +54,12 @@ Include etc/apache24/extra/httpd-vhosts.conf
 Listen 803
 EOF
 ```
+Необязательно, но желательно отключить прослушку 80 порта, чтобы не было конкуренции с lighttpd, на котором работает web-интерфейс XigmaNAS.
+Для этого в файле `/usr/local/etc/apache24/httpd.conf` нужно найти строку 
+```bash
+Listen 80
+``` 
+и удалить, либо закомментировать ее.
 
 Проверяем секцию `<IfModule mime_module>` на наличие строки ```AddType application/x-httpd-php .php```.
 Без этого php файлы будут выводится обычным текстом. А в конфигурации по умолчанию этой строки нет.
