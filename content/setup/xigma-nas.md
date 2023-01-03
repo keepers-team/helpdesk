@@ -117,7 +117,7 @@ nano /etc/rc.d/lighttpd
 ```
 
 Листаем вниз до секции 
-```bash
+```lua
 server.modules = (
   "mod_access",
   "mod_auth",
