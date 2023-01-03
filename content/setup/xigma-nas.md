@@ -136,7 +136,7 @@ server.modules = (
   "mod_rrdtool"
  ```
 Далее после строк:
-```bash
+```lua
 \$HTTP["url"] =~ "\.(js|css|css.php|png|gif|jpg)$" {
     expire.url = ( "" => "access plus 1 hours" )
 }
