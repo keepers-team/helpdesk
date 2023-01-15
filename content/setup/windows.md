@@ -19,8 +19,9 @@ PHP устанавливать не нужно!
 {{% /notice %}}
 
 ### Установка и использование
+- Скачать и установить [MS Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe).
 - Скачать последнюю версию архива [из раздела Releases](https://github.com/keepers-team/windows/releases) и распаковать в любое удобное место.
-- для использования web-интерфейса запустить web-сервер, выполнив `Start.bat`. Интерефейс доступен по адресу [http://localhost:39080/](http://localhost:39080/)
+- Для использования web-интерфейса запустить web-сервер, выполнив `Start.bat`. Интерефейс доступен по адресу [http://localhost:39080/](http://localhost:39080/)
 - Для остановки web-сервера выполнить `Stop.bat`
 
 {{% notice style="note" title="(пока) Отсутствующие возможности" %}}
@@ -30,12 +31,9 @@ PHP устанавливать не нужно!
 - простой GUI
   {{% /notice %}}
 
-
-Для запуска web-TLO под управлением ОС Windows рекомендуется использовать WAMP платформу [Open Server Panel](https://ospanel.io/).
+## Open Server Panel
 
 Скачиваем дистрибутив с сайта [Open Server Panel](https://ospanel.io/download/), либо берём [здесь](https://cloud.mail.ru/public/GeiW/nZxz2WxaC).
-
-## Open Server Panel
 
 Запускаем скачанный файл установщика.
 
