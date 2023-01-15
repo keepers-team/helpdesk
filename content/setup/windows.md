@@ -3,11 +3,39 @@ title: "Windows"
 weight: 1
 ---
 
+## Standalone
+
+{{% notice style="note" title="Эксперимент" icon="dragon" %}}
+Способ установки экспериментальный и не все возможности там поддерживаются
+{{% /notice %}}
+
+Учитывая сложности с установкой и настройкой Open Server Panel мы подготовили самодостаточный дистрибутив webTLO,
+не требующий установки чего-либо, кроме [MS Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+
+Сборка содержит в себе приложение, php, необходимые зависимости и nginx.
+
+{{% notice info %}}
+PHP устанавливать не нужно!
+{{% /notice %}}
+
+### Установка и использование
+- Скачать последнюю версию архива [из раздела Releases](https://github.com/keepers-team/windows/releases) и распаковать в любое удобное место.
+- для использования web-интерфейса запустить web-сервер, выполнив `Start.bat`. Интерефейс доступен по адресу [http://localhost:39080/](http://localhost:39080/)
+- Для остановки web-сервера выполнить `Stop.bat`
+
+{{% notice style="note" title="(пока) Отсутствующие возможности" %}}
+- поддержка rtorrent
+- автоматическое добавление скриптов автоматизации в планировщик windows
+- иконка в tray
+- простой GUI
+  {{% /notice %}}
+
+
 Для запуска web-TLO под управлением ОС Windows рекомендуется использовать WAMP платформу [Open Server Panel](https://ospanel.io/).
 
 Скачиваем дистрибутив с сайта [Open Server Panel](https://ospanel.io/download/), либо берём [здесь](https://cloud.mail.ru/public/GeiW/nZxz2WxaC).
 
-### Установка Open Server Panel
+## Open Server Panel
 
 Запускаем скачанный файл установщика.
 
