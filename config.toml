@@ -6,3 +6,6 @@ defaultContentLanguage = "ru"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[params]
+themeVariant = ["keepers-dark"]
