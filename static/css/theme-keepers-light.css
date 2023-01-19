@@ -6,12 +6,12 @@
     --SECONDARY-color: var(--green); /* brand secondary color */
     --ACCENT-color: var(--magenta); /* brand accent color, used for search highlights */
 
-    --MAIN-TEXT-color: var(--sky-plus); /* text color of content and h1 titles */
-    --MAIN-LINK-HOVER-color: var(--sun-minus); /* hoverd link color of content */
-    --MAIN-BG-color: var(--shade); /* background color of content */
+    --MAIN-TEXT-color: var(--shade); /* text color of content and h1 titles */
+    --MAIN-LINK-HOVER-color: var(--shade-minus); /* hoverd link color of content */
+    --MAIN-BG-color: var(--sun); /* background color of content */
 
     /* optional overwrites for specific headers */
-    --MAIN-TITLES-TEXT-color: var(--sky-plus); /* text color of h2-h6 titles and transparent box titles */
+    --MAIN-TITLES-TEXT-color: var(--shade); /* text color of h2-h6 titles and transparent box titles */
 
     --CODE-BLOCK-color: var(--sky-plus); /* fallback text color of block code; should be adjusted to your selected chroma style */
     --CODE-BLOCK-BG-color: var(--shade); /* fallback background color of block code; should be adjusted to your selected chroma style */
@@ -22,7 +22,7 @@
     --CODE-INLINE-BORDER-color: var(--sky-minus); /* border color of inline code */
 
     --MERMAID-theme: default; /* name of the default Mermaid theme for this variant, can be overridden in config.toml */
-    --SWAGGER-theme: dark; /* name of the default Swagger theme for this variant, can be overridden in config.toml */
+    --SWAGGER-theme: light; /* name of the default Swagger theme for this variant, can be overridden in config.toml */
 
     --MENU-HOME-LINK-color: var(--shade); /* home button color if configured */
     --MENU-HOME-LINK-HOVER-color: var(--shade-minus); /* hoverd home button color if configured */
@@ -43,18 +43,18 @@
 
     /* base styling for boxes */
     --BOX-CAPTION-color: var(--sun); /* text color of colored box titles */
-    --BOX-BG-color: rgba(0, 0, 0, .60); /* background color of colored boxes */
-    --BOX-TEXT-color: var(--sun-minus); /* text color of colored box content */
+    --BOX-BG-color: rgba(255, 255, 255, .60); /* background color of colored boxes */
+    --BOX-TEXT-color: var(--shade-minus); /* text color of colored box content */
 
     /* optional base colors for colored boxes as in attachments and notice shortcode */
     --BOX-BLUE-color: var(--blue); /* background color of blue boxes */
-    --BOX-BLUE-TEXT-color: var(--sky-plus); /* text color of blue boxes */
+    --BOX-BLUE-TEXT-color: var(--shade-minus); /* text color of blue boxes */
     --BOX-GREEN-color: var(--green); /* background color of green boxes */
-    --BOX-GREEN-TEXT-color: var(--sky-plus); /* text color of green boxes */
+    --BOX-GREEN-TEXT-color: var(--shade-minus); /* text color of green boxes */
     --BOX-GREY-color: var(--shade-minus); /* background color of grey boxes */
-    --BOX-GREY-TEXT-color: var(--sky-plus); /* text color of grey boxes */
+    --BOX-GREY-TEXT-color: var(--shade-minus); /* text color of grey boxes */
     --BOX-ORANGE-color: var(--orange); /* background color of orange boxes */
-    --BOX-ORANGE-TEXT-color: var(--sky-plus); /* text color of orange boxes */
+    --BOX-ORANGE-TEXT-color: var(--shade-minus); /* text color of orange boxes */
     --BOX-RED-color: var(--red); /* background color of red boxes */
-    --BOX-RED-TEXT-color: var(--sky-plus); /* text color of red boxes */
+    --BOX-RED-TEXT-color: var(--shade-minus); /* text color of red boxes */
 }

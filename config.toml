@@ -8,4 +8,4 @@ defaultContentLanguage = "ru"
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-themeVariant = ["keepers-dark"]
+themeVariant = ["keepers-dark", "keepers-light"]

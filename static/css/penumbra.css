@@ -1,0 +1,50 @@
+:root {
+    /*
+
+    PENUBMRA — https://github.com/nealmckee/penumbra
+
+    For a dark theme
+
+        Sun+ “white”, text in highlighted sections, emphasized borders
+        Sun selections, light borders, strongly emphasized content
+        Sun- optional
+        Sky+ emphasized content and emphasized UI text
+        Sky foreground, code, main content colour, text both in editors and UI elements
+        Sky- comments, de-emphasized content
+        Shade+ foreground UI elements, rulers, indentation guides and similar
+        Shade main background colour
+        Shade- “black”, de-emphasized/receded background elements, selections, dark UI elements
+
+    For a light theme
+
+        Shade- “white”, text in highlighted sections, emphasized borders
+        Shade selections, light borders, strongly emphasized content
+        Shade+ optional
+        Sky- emphasized content and emphasized UI text
+        Sky foreground, code, main content colour, text both in editors and UI elements
+        Sky+ comments, de-emphasized content
+        Sun- foreground UI elements, rulers, indentation guides and similar
+        Sun main background colour
+        Sun+ “black”, de-emphasized/receded background elements, selections, dark UI elements
+    */
+
+    --sun-plus: #FFFDFB;
+    --sun: #FFF7ED;
+    --sun-minus: #F2E6D4;
+    --sky-plus: #CECECE;
+    --sky: #9E9E9E;
+    --sky-minus: #636363;
+    --shade-plus: #3E4044;
+    --shade: #24272B;
+    --shade-minus: #181B1F;
+
+    /* Accent Colour Palettes with Enhanced Brightness and Chroma */
+    --red: #DF7F78;
+    --orange: #CE9042;
+    --yellow: #9CA748;
+    --green: #50B584;
+    --cyan: #00B3C2;
+    --blue: #61A3E6;
+    --purple: #A48FE1;
+    --magenta: #D080B6;
+}
