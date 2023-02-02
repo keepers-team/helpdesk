@@ -9,3 +9,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
 themeVariant = ["keepers-dark", "keepers-light"]
+additionalContentLanguage = [ "en" ]
+
+[Languages]
+[Languages.ru]
+landingPageName = "<i class='fas fa-home'></i> Главная"
