@@ -21,7 +21,7 @@ weight: 2
 На странице будет показана текущая конфигурация среды выполнения и состояние прокси.
 
 Чтобы поделиться ею, нужно нажать кнопку «**Share my config**» — конфигурация будет автоматически загружена на наш
-приватный pastebin, [bin.keepers.tech](https://bin.keepers.tec)
+приватный pastebin, [bin.keepers.tech](https://bin.keepers.tech)
 
 {{% notice style=info title="Примечание" %}}
 Сервис [bin.keepers.tech](https://bin.keepers.tech) можно использовать, чтобы делиться логами или скриншотами
