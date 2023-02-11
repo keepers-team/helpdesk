@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "webtlo": {
+        "deprecated": "2.4.0",
+        "unsupported": "2.3.0"
+    },
+    "proxy": [
+        {
+            "hostname": "gateway.keepers.tech",
+            "port": 60789,
+            "type": "SOCKS5H",
+            "credentials": null,
+            "enabled": true
+        },
+        {
+            "hostname": "gateway.keeps.cyou",
+            "port": 2081,
+            "type": "SOCKS5H",
+            "credentials": null,
+            "enabled": true
+        }
+    ]
+}
