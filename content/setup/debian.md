@@ -1,5 +1,5 @@
 ---
-title: "Debian"
+title: "Debian-based (Ubuntu, Mint, ALT, OMV)"
 weight: 6
 ---
 
