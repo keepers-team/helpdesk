@@ -3,11 +3,7 @@ title: "Windows"
 weight: 1
 ---
 
-## Standalone
-
-{{% notice style="note" title="Эксперимент" icon="dragon" %}}
-Способ установки экспериментальный и не все возможности там поддерживаются
-{{% /notice %}}
+## Standalone, приоритетный основной способ
 
 Учитывая сложности с установкой и настройкой Open Server Panel мы подготовили самодостаточный дистрибутив webTLO,
 не требующий установки чего-либо, кроме [MS Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe).
@@ -20,7 +16,7 @@ PHP устанавливать не нужно!
 
 ### Установка и использование
 - Скачать и установить [MS Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe).
-- Скачать последнюю версию архива [из раздела Releases](https://github.com/keepers-team/windows/releases) и распаковать в любое удобное место.
+- Скачать последнюю версию архива [из раздела Releases](https://github.com/keepers-team/webtlo/releases/) и распаковать в любое удобное место.
 - Для использования web-интерфейса запустить web-сервер, выполнив `Start.bat`. Интерефейс доступен по адресу [http://localhost:39080/](http://localhost:39080/)
 - Для остановки web-сервера выполнить `Stop.bat`
 - Для добавление скриптов автоматизации в планировщик windows выполнить `shedule-install.bat`
@@ -32,7 +28,7 @@ PHP устанавливать не нужно!
 - простой GUI
   {{% /notice %}}
 
-## Open Server Panel
+## Open Server Panel, устаревший способ, лучше не использовать
 
 Скачиваем дистрибутив с сайта [Open Server Panel](https://ospanel.io/download/), либо берём [здесь](https://cloud.mail.ru/public/GeiW/nZxz2WxaC).
 

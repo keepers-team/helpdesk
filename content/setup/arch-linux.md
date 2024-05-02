@@ -1,5 +1,5 @@
 ---
-title: "Arch Linux"
+title: "Arch Linux, nginx"
 weight: 8
 ---
 
@@ -7,6 +7,14 @@ weight: 8
 
 ```bash
 sudo pacman -S nginx php-fpm php-sqlite
+```
+
+***
+
+**Включаем автозагрузку служб и запускаем их:**
+
+```bash
+sudo systemctl enable --now nginx.service php-fpm.service
 ```
 
 ***
@@ -20,6 +28,13 @@ wget https://github.com/keepers-team/webtlo/releases/latest/download/webtlo.zip
 sudo unzip -o webtlo.zip -d /var/www/
 rm -f webtlo.zip
 ```
+
+Поменять права и группу на директорию WebTLO, необходимо выдать юзеру/группе, под которым работает сервис php-fpm, чтобы он смог писать логи:
+```bash
+sudo chown http: -R /var/www/webtlo.local
+```
+
+*в случае если вашим юзером для php-fpm указан http
 
 ***
 
@@ -52,6 +67,7 @@ sudo nano /etc/nginx/nginx.conf
 ```bash
 sudo nano /etc/nginx/conf.d/webtlo.conf
 ```
+> **ПРИМЕЧАНИЕ.** в директиве root должен быть прописан путь до index.php. Например, если WebTLO качался не по ссылке выше и файл index.php находится в подпапке src.
 
 Вписываем в конфиг:
 ```bash
@@ -81,9 +97,15 @@ server {
 sudo nano /etc/php/php.ini
 ```
 
-Ищем и расскоментируем `;extension=sqlite3` и `;extension=pdo_sqlite`
+Ищем и расскоментируем (удаляем `;` в начале строки) `;extension=sqlite3` и `;extension=pdo_sqlite`
 
 Сохраняем и выходим _Ctrl+X_
+
+Проверяем конфиг nginx и перезапускаем его, если всё ОК:
+```bash
+sudo nginx -t
+sudo systemctl restart nginx
+```
 
 ***
 
@@ -102,30 +124,8 @@ sudo nano /etc/hosts
 ***
 
 
-**Создаём каталог для пользовательских данных и задаём ему необходимые права доступа:**
 
-```bash
-sudo mkdir -p /var/www/webtlo.local/data
-sudo chown http: -R /var/www/webtlo.local/data
-``` 
-*в случае если вашим юзером для nginx указан http
-
-
-***
-
-
-**Включаем автозагрузку служб и запускаем их:**
-
-```bash
-sudo systemctl enable nginx.service php-fpm.service
-sudo systemctl start nginx.service php-fpm.service
-```
-
-
-***
-
-
-Открываем в браузере страницу http://webtlo.local/
+Открываем в браузере страницу http://webtlo.local:8099/
 
 ![изображение](https://user-images.githubusercontent.com/54148165/176675025-41db14f3-e8f5-4f75-8199-0f5592e61fbb.png)
 
